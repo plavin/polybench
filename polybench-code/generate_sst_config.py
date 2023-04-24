@@ -27,8 +27,6 @@ def find_prog_dirs(path):
 for p in paths:
     find_prog_dirs(p)
 
-print(prog_dirs)
-
 configs = {}
 for p in prog_dirs:
     configs[str(p.stem)] = {
