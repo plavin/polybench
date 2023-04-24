@@ -6,5 +6,7 @@
 
 # Unignore all dirs
 !*/
+!Makefile
 
+# Ignore .o files
 *.o
