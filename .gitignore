@@ -10,3 +10,5 @@
 
 # Ignore .o files
 *.o
+*.json
+**/dramsim3.txt

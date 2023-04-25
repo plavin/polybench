@@ -75,8 +75,12 @@ void kernel_jacobi_1d(int tsteps,
 int main(int argc, char** argv)
 {
   /* Retrieve problem size. */
+  //PATRICK
+  //int tsteps = 1;
+  //int n = 100;
   int n = N;
   int tsteps = TSTEPS;
+  //printf("n: %d, tsteps: %d\n", n, tsteps);
 
   /* Variable declaration/allocation. */
   POLYBENCH_1D_ARRAY_DECL(A, DATA_TYPE, N, n);

@@ -1,0 +1,67 @@
+Timing 30 programs
+ 0 gramschmidt      6.76s
+ 1 ludcmp           47.95s
+ 2 trisolv          0.03s
+ 3 cholesky         46.13s
+ 4 lu               50.44s
+ 5 durbin           0.02s
+ 6 symm             4.45s
+ 7 syr2k            9.23s
+ 8 gemver           0.09s
+ 9 gemm             6.83s
+10 trmm             2.93s
+11 syrk             3.30s
+12 gesummv          0.04s
+13 doitgen          2.20s
+14 3mm              12.84s
+15 2mm              7.85s
+16 bicg             0.06s
+17 atax             0.06s
+18 mvt              0.06s
+19 nussinov         11.90s
+20 floyd-warshall   94.68s
+21 deriche          0.55s
+22 jacobi-1d        0.00s
+23 adi              16.85s
+24 fdtd-2d          11.40s
+25 heat-3d          27.99s
+26 jacobi-2d        12.38s
+27 seidel-2d        33.15s
+28 covariance       5.06s
+29 correlation      4.96s
+{   '2mm': 7.85,
+    '3mm': 12.84,
+    'adi': 16.85,
+    'atax': 0.06,
+    'bicg': 0.06,
+    'cholesky': 46.13,
+    'correlation': 4.96,
+    'covariance': 5.06,
+    'deriche': 0.55,
+    'doitgen': 2.2,
+    'durbin': 0.02,
+    'fdtd-2d': 11.4,
+    'floyd-warshall': 94.68,
+    'gemm': 6.83,
+    'gemver': 0.09,
+    'gesummv': 0.04,
+    'gramschmidt': 6.76,
+    'heat-3d': 27.99,
+    'jacobi-1d': 0.0,
+    'jacobi-2d': 12.38,
+    'lu': 50.44,
+    'ludcmp': 47.95,
+    'mvt': 0.06,
+    'nussinov': 11.9,
+    'seidel-2d': 33.15,
+    'symm': 4.45,
+    'syr2k': 9.23,
+    'syrk': 3.3,
+    'trisolv': 0.03,
+    'trmm': 2.93}
+
+The following programs ran in less than a second:
+['trisolv', 'durbin', 'gemver', 'gesummv', 'bicg', 'atax', 'mvt', 'deriche', 'jacobi-1d']
+
+The following programs took at least a second to run:
+['gramschmidt', 'ludcmp', 'cholesky', 'lu', 'symm', 'syr2k', 'gemm', 'trmm', 'syrk', 'doitgen', '3mm', '2mm', 'nussinov', 'floyd-warshall', 'adi', 'fdtd-2d', 'heat-3d', 'jacobi-2d', 'seidel-2d', 'covariance', 'correlation']
