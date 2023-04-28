@@ -153,6 +153,15 @@
 # define polybench_stop_instruments
 # define polybench_print_instruments
 
+# ifdef POLYBENCH_ARIEL
+#include <ariel.h>
+# undef polybench_start_instruments
+# undef polybench_stop_instruments
+# define polybench_start_instruments      \
+  ariel_enable();
+# define polybench_stop_instruments       \
+  exit(0);
+#endif
 
 /* PAPI support. */
 # ifdef POLYBENCH_PAPI
